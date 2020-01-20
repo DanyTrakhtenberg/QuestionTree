@@ -1,0 +1,3 @@
+<div *ngFor="let question of questionTree" class="center">
+  <app-question  [question] = question  (notifyAnswer)="getAnswer($event)"> </app-question>
+</div>

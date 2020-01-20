@@ -1,0 +1,20 @@
+<div class="question" #elementRef [ngClass]="{selected:isRequiredAnswer}">
+  <div class="question-header">
+    <h4>{{ question.question }}</h4>
+  </div>
+  <div class="question-body">
+    <div
+      name="answers"
+      class="btn-group"
+      *ngFor="let question of question.followUpQuestions"
+    >
+      <button
+      [attr.disabled]="disableButtons ? '' : null"
+        class="btn btn-primary"
+        (click)="answerClicked($event, question)"
+      >
+        {{ question.answer }}
+      </button>
+    </div>
+  </div>
+</div>
