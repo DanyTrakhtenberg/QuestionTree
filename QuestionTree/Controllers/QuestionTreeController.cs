@@ -31,7 +31,7 @@ namespace QuestionTree.Controllers
 
 
                              } },
-                              new QuestionNode(){Answer = "Watching on-line courser" , Question="Which ones?" ,FollowUpQuestions = new List<QuestionNode>(){
+                              new QuestionNode(){Answer = "Watching on-line courses" , Question="Which ones?" ,FollowUpQuestions = new List<QuestionNode>(){
                                       new QuestionNode(){Answer = "Saving private public" , Question="You are going to be a master at access modifiers" },
                                       new QuestionNode(){Answer = "Angular routing" , Question="You should watch some testing videos first " },
 
